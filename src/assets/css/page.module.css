@@ -1,0 +1,66 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .header {
+    background-color: #dac520;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    margin-bottom: 2rem;
+  }
+  
+  .room {
+    overflow: hidden; /* Đảm bảo nội dung không tràn ra ngoài */
+    width: 100%; /* Đảm bảo khung chứa chiếm toàn bộ chiều rộng */
+  
+    margin: 0 auto; 
+    border-radius: 8px; ;
+    border: 0.5px solid #abbac4;
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .footer {
+    background-color: #35424a;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .description {
+    color: #2b0bdf;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .mapContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .mapContainer iframe {
+    max-width: 100%;
+    height: auto;
+  }

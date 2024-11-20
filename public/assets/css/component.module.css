@@ -1,0 +1,333 @@
+.list-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .button {
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+
+  .room-table {
+    width: 100%;
+  }
+  
+  .room-table th,
+  .room-table td {
+    width: 20%; /* Giới hạn chiều rộng của mỗi ô bảng thành 1/5 chiều rộng của bảng */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .room-table th,
+  .room-table td.expanded {
+    white-space: normal; /* Hiển thị đầy đủ nội dung khi được nhấp vào */
+  }
+  .table-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+  .tableCell {
+    width: 400px !important; /* Adjust the width as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    color: rgb(38, 0, 255);
+  }
+  
+  .table-cell.expanded {
+    white-space: normal;
+  }
+
+  .grid-cell.expanded {
+    white-space: normal;
+  }
+
+  .admin-page-container {
+    display: flex;
+  }
+  
+  .mdc-drawer {
+    width: 240px; /* Adjust the width as needed */
+  }
+  
+  .mdc-drawer-app-content {
+    flex-grow: 1;
+    padding: 16px; /* Adjust the padding as needed */
+  }
+  .gridItemTitle {
+    border: 1px solid #ccc;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+  }
+  .gridItemDetail {
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;      
+  }
+  .transparentButton {
+    background-color: transparent;
+    box-shadow: none;
+    text-decoration: underline;
+    color: black;
+    margin-right: 2px;
+  }
+  
+  .transparentButton:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    box-shadow: none;
+  }
+  .textWrapper {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;    
+  }
+  .roomContainer {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure it takes full width of the column */
+  } 
+  
+  .timelineContainer {
+    position: relative;
+    width: 1170px;
+    height: 44px; /* Adjust height as needed */
+    margin-top: 0px;
+    overflow: hidden; /* Prevent overflow */
+    margin-bottom: 10px;
+  }
+  .timelineContainer2Day {
+    position: relative;
+    width: 2340px;
+    height: 44px; /* Adjust height as needed */
+    margin-top: 0x;
+    overflow: hidden; 
+    margin-bottom: 10px;
+  }
+  .timelineContainer3Day {
+    position: relative;
+    width: 3510px;
+    height: 44px; /* Adjust height as needed */
+    margin-top: 0x;
+    overflow: hidden; 
+    margin-bottom: 10px;
+  }
+  
+  .timelineBarUnused {
+  position: absolute;
+  height: 66px;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  background-color: #32855d;
+  white-space: nowrap;
+  overflow: visible;
+  padding-right: 5px; /* Add padding to prevent text from being cut off */
+}
+
+.unusedTimeLabel {
+  font-size: 14px;
+  color: #130f01;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: visible;  
+  padding-right: 5px;
+  align-items: center;
+  justify-content: center;/* Add padding to prevent text from being cut off */
+}
+  
+.timelineBar {
+  position: absolute;
+  height: 66px;
+  border: 1px solid #b56d09;
+  white-space: nowrap;
+  overflow: visible;
+  padding-right: 5px;
+  background-color: rgba(209, 77, 16, 0.5);
+   /* Add padding to prevent text from being cut off */  
+}
+
+  .timelineSlot {
+    flex: 1;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d14d10; /* Background color for the slots */
+    height: 100%;
+    color: #fff; /* Text color for better visibility */
+  }
+  .legend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .legendSquare {
+    width: 20px;
+    height: 20px;
+    background-color: #32855d; /* Màu của trạng thái "unused" */
+    margin-right: 10px;
+  }
+  
+  .legendLabel {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .timelineBarUnusedShort {
+    position: absolute;
+    height: 66px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d07f0;
+    white-space: nowrap;
+    overflow: visible;
+    padding-right: 5px;
+  }
+
+  .datePickerContainer {
+    position: relative;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;    
+     background-color: white;     
+  }
+
+  .datePickerLabel {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #333;    
+  }
+  
+  .datePickerLabelLeft {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #333;    
+  }
+  
+  .datePickerLabelRight {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #333;    
+  }
+  
+  .formControl {
+    padding-top: 20px; /* Adjust padding to make space for the label */
+  }
+  .tabSelected {
+    font-weight: bold;
+    background-color: #d3d3d3; /* Màu nền xám */
+  }
+  
+  .tab {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .timelineWrapper {
+    width: 100%;
+    overflow-x: auto;
+    /* position: relative; */
+  }
+  .roomName {
+    font-weight: bold;
+    margin-bottom: 0px;
+    width: 3%;    
+  }
+   .roomNameFix {   
+    font-weight: bold;
+    margin-bottom: 2px;       
+    width: 3%;
+    position: absolute;
+    left: 40px;    
+    z-index: 1;   
+    color: aqua; 
+  } 
+
+  .fixedTop {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;    
+    top: 0;    
+    z-index: 9999; /* Ensure it is on top of other elements */
+    background-color: white; /* Optional: to ensure the text is readable */
+  }
+
+  .usedTimeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .usedTimeLabel {
+    display: block;
+    font-size: 14px;
+    color: #130f01;
+    font-weight: bold;
+  }
+  .inputSelect {
+    border: 1px solid #130f01;
+    border-radius: 5px;
+    height: 35px;
+    background-color: white;
+  }
+
+  .inputField {
+    border: 1px solid #130f01;
+    border-radius: 5px;
+    height: 35px;   
+  }
+
+  .labelWidth {
+    width: 150px; /* Adjust this value as needed */
+  }
+  .tableResponsiveContainer {
+    .table-responsive-container {
+      max-width: 100%;
+      max-height: 100vh;
+      overflow-x: auto;
+      overflow-y: auto;
+    }
+  }
+
+  .customTable {
+    border-color: #000;
+    border-width: 2px;
+  }
+  
+  .customTable tbody tr:nth-of-type(odd) {
+    background-color: #201049;
+  }
+  
+  .customTable tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+  }
+  

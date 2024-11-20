@@ -1,0 +1,121 @@
+.fullHeight {
+    height: 100%;
+  }
+  
+  .bgBlue {
+    background-color: #00008B;
+  }
+  .bgPurple {
+    background: linear-gradient(#2a1c5a, #4b3a6e);
+  }
+  .bg-light-gray {
+    background-color: #f8f9fa; /* Màu xám gần trắng */
+  }
+  .bg-light-yellow {
+    background-color: #a9b235; 
+  }
+  .bg-black {
+    background-color: black; 
+  }
+
+  .adminHeader {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+  }
+  
+  .customNavbar {
+    background-color: #0e6fd0; 
+    color: white;     
+      display: flex;
+      align-items: center;    
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .customNavbar .navbarBrand {
+    color: white;
+  }
+  
+  .customNavbar .navbarToggler {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .customNavbar .navbarTogglerIcon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .menuButton {
+    font-weight: normal;
+    color: white;
+    background-color: black;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+  }
+  
+  .menuButtonActive {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(246, 13, 110);
+    border-radius: 8px;
+  }
+  .menuButtonExtra {
+    font-weight: bold;
+    color: rgb(13, 111, 157);
+    background-color: rgb(5, 2, 23);
+    border-radius: 5px;
+  }
+  
+  .menuButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+
+  .contentExpanded {
+    width: 88%;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .contentCollapsed {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar h2, .sidebar h3 {
+    color: #fff;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .sidebar .upgrade-btn {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .logoSmall {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;   
+  }
